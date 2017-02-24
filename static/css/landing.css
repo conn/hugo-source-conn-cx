@@ -1,0 +1,29 @@
+h1 {
+  color: #268bd2;
+  text-transform: none;
+}
+
+ul.definition-header {
+  color: #6c71c4;
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul.definition-header li {
+  display: inline-block;
+}
+
+ul.definition-header li + li {
+  padding-left: 0.6944348rem;
+}
+
+ul.definition-header li + li::before {
+  content: '\007c';
+  display: inline-block;
+  margin-right: 0.809rem;
+}
+
+ol.definitions {
+  color: #b58900;
+}

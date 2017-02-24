@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {{ partial "meta.html" . }}
+  <title>{{ .Site.Title }}</title>
+  {{ partial "css.html" . }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/landing.css">
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+
+  <div>
+    {{ partial "nav-side.html" . }}
+
+    <main>
+      <section class="single">
+        <header>
+          {{ partial "tags.html" . }}
+          <h1>JD Friedrikson</h1>
+
+            <ul class="definition-header">
+              <li>proper noun</li>
+              <li>J·D Fried·rik·son</li>
+              <li>\ˈjā-dē frē-drik-sən\</li>
+            </ul>
+
+            <ol class="definitions">
+              <li class="definition">
+                an okay person
+              </li>
+              <li class="definition">
+                a decent engineer
+              </li>
+              <li class="definition">
+                a novice photographer
+              </li>
+            </ol>
+        </header>
+
+      </section>
+    </main>
+  </div>
+
+  {{ partial "footer.html" . }}
+  {{ partial "js.html" . }}
+</body>
+</html>

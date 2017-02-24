@@ -1,0 +1,13 @@
+---
+baseURL: "https://conn.cx/"
+languageCode: "en-us"
+title: "conn"
+theme: "distinct"
+
+taxonomies:
+    tag: "tags"
+    category: "categories"
+
+menu:
+    top: []
+    side: []

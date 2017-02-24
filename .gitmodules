@@ -1,0 +1,6 @@
+[submodule "themes/distinct"]
+	path = themes/distinct
+	url = https://github.com/conn/hugo-theme-distinct.git
+[submodule "static/images/logo-conn"]
+	path = static/images/logo-conn
+	url = https://github.com/conn/logo-conn.git
