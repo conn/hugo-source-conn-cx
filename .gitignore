@@ -1,1 +1,6 @@
 public
+
+src/scss/.sass-cache
+
+static/assets/*/*
+!static/assets/*/.keep

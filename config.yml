@@ -6,7 +6,8 @@ theme: "distinct"
 
 taxonomies:
     tag: "tags"
-    category: "categories"
+
+canonifyURLs: true
 
 menu:
     top: []
