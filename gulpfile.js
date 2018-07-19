@@ -35,10 +35,15 @@ const scss = function() {
   });
 };
 
+const hugo = function() {
+    spawn('hugo');
+};
+
 gulp.task('clean', function () {
   del.sync([
     'static/assets/**',
-    '!static/assets/**/.keep'
+    '!static/assets/**/.keep',
+    'public/**'
   ]);
 });
 
@@ -78,6 +83,10 @@ gulp.task('favicon', function () {
   gulp.src('src/favicon.ico').pipe(gulp.dest('static'));
 });
 
+gulp.task('hugo', function () {
+  hugo();
+});
+
 gulp.task(
   'default',
 
@@ -88,6 +97,7 @@ gulp.task(
     'js',
     'fonts',
     'images',
-    'favicon'
+    'favicon',
+    'hugo'
   ]
 );
