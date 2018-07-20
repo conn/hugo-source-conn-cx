@@ -11,4 +11,10 @@ canonifyURLs: true
 
 menu:
     top: []
-    side: []
+
+    side:
+        - name: albums
+          url: /albums
+
+        - name: tags
+          url: /tags
