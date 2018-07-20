@@ -37,7 +37,13 @@ const scss = function() {
 };
 
 const hugo = function() {
-    spawn('hugo');
+    spawn('hugo', [
+        '--cleanDestinationDir',
+        '--gc',
+        '--ignoreCache',
+        '--noChmod',
+        '--noTimes'
+    ]);
 };
 
 gulp.task('clean', function () {
