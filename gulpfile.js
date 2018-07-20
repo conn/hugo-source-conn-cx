@@ -6,6 +6,7 @@ const gulp = require('gulp');
 const spawn = require('child_process').spawnSync;
 const through = require('through2');
 const del = require('del');
+const runSequence = require('run-sequence');
 
 const cmdPipe = function (cmd, args) {
   return through.obj(function (file, enc, cb) {
@@ -87,17 +88,10 @@ gulp.task('hugo', function () {
   hugo();
 });
 
-gulp.task(
-  'default',
-
-  [
+gulp.task('default', function() {
+  runSequence(
     'clean',
-    'css',
-    'scss',
-    'js',
-    'fonts',
-    'images',
-    'favicon',
+    ['css', 'scss', 'js', 'fonts', 'images', 'favicon'],
     'hugo'
-  ]
-);
+  );
+});
