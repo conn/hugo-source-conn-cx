@@ -5,8 +5,8 @@
 const gulp = require('gulp');
 const spawn = require('child_process').spawnSync;
 const through = require('through2');
-const rimraf = require('rimraf');
-const mkdirp = require('mkdirp');
+const rimraf = require('rimraf').sync;
+const mkdirp = require('mkdirp').sync;
 const runSequence = require('run-sequence');
 
 const cmdPipe = function (cmd, args) {
@@ -54,47 +54,47 @@ gulp.task('clean', function () {
     'static/assets/fonts',
     'static/assets/images'
   ].forEach(function (dir) {
-    rimraf.sync(dir + '/**');
-    mkdirp.sync(dir);
+    rimraf(dir + '/**');
+    mkdirp(dir);
   });
 
-  rimraf.sync('public');
+  rimraf('public');
 });
 
 gulp.task('css', function () {
-  gulp.src('src/css/**/*.css')
-      .pipe(minify('css'))
-      .pipe(gulp.dest('static/assets/css'));
+  return gulp.src('src/css/**/*.css')
+             .pipe(minify('css'))
+             .pipe(gulp.dest('static/assets/css'));
 });
 
 gulp.task('scss', function () {
-  gulp.src(['src/scss/**/*.scss', '!src/scss/**/_*.scss'])
-      .pipe(scss());
+  return gulp.src(['src/scss/**/*.scss', '!src/scss/**/_*.scss'])
+             .pipe(scss());
 });
 
 gulp.task('js', function () {
-  gulp.src('src/js/**/*.js')
-      .pipe(minify('js'))
-      .pipe(gulp.dest('static/assets/js'));
+  return gulp.src('src/js/**/*.js')
+             .pipe(minify('js'))
+             .pipe(gulp.dest('static/assets/js'));
 });
 
 gulp.task('fonts', function () {
-  gulp.src([
+  return gulp.src([
     'src/fonts/**/*.otf',
-    'src/fonts/**/*.ttf',
+    'src/fonts/**/*.ttf'
   ]).pipe(gulp.dest('static/assets/fonts'));
 });
 
 gulp.task('images', function () {
-  gulp.src([
+  return gulp.src([
     'src/images/**/*.jpg',
     'src/images/**/*.png',
-    'src/images/**/*.svg',
+    'src/images/**/*.svg'
   ]).pipe(gulp.dest('static/assets/images'));
 });
 
 gulp.task('favicon', function () {
-  gulp.src('src/favicon.ico').pipe(gulp.dest('static'));
+  return gulp.src('src/favicon.ico').pipe(gulp.dest('static'));
 });
 
 gulp.task('hugo', function () {
@@ -102,15 +102,15 @@ gulp.task('hugo', function () {
 });
 
 gulp.task('html', function () {
-  gulp.src('public/**/*.html')
-      .pipe(minify('html'))
-      .pipe(gulp.dest('public'));
+  return gulp.src('public/**/*.html')
+             .pipe(minify('html'))
+             .pipe(gulp.dest('public'));
 });
 
 gulp.task('xml', function () {
-  gulp.src('public/**/*.xml')
-      .pipe(minify('xml'))
-      .pipe(gulp.dest('public'));
+  return gulp.src('public/**/*.xml')
+             .pipe(minify('xml'))
+             .pipe(gulp.dest('public'));
 });
 
 gulp.task('default', function() {
