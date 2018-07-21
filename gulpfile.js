@@ -101,10 +101,23 @@ gulp.task('hugo', function () {
   hugo();
 });
 
+gulp.task('html', function () {
+  gulp.src('public/**/*.html')
+      .pipe(minify('html'))
+      .pipe(gulp.dest('public'));
+});
+
+gulp.task('xml', function () {
+  gulp.src('public/**/*.xml')
+      .pipe(minify('xml'))
+      .pipe(gulp.dest('public'));
+});
+
 gulp.task('default', function() {
   runSequence(
     'clean',
     ['css', 'scss', 'js', 'fonts', 'images', 'favicon'],
-    'hugo'
+    'hugo',
+    ['html', 'xml']
   );
 });
