@@ -10,7 +10,7 @@ description: >
 nonpost: true
 
 tags:
-    - digital photography
+    - photography
     - philadelphia
 
 cover:
