@@ -9,11 +9,11 @@ description: >
     Temple of Soul's Retreat (Lingyin Temple).
     Saturday, April 29, 2018.
 
-    杭州市.
-    西湖.
-    雷峰塔.
-    灵隐寺.
-    2018年4月29日星期六.
+    杭州市。
+    西湖。
+    雷峰塔。
+    灵隐寺。
+    2018年4月29日星期六。
 
 nonpost: true
 
@@ -32,11 +32,11 @@ Leifeng Pagoda.
 Temple of Soul's Retreat (Lingyin Temple).  
 Saturday, April 29, 2018.  
 
-杭州市.  
-西湖.  
-雷峰塔.  
-灵隐寺.  
-2018年4月29日星期六.  
+杭州市。  
+西湖。  
+雷峰塔。  
+灵隐寺。  
+2018年4月29日星期六。  
 
 {{< gallery >}}
     {{< figure link="040b6616.jpg" thumb="-thumb" size="1920x1285" >}}

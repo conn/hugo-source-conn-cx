@@ -5,8 +5,9 @@ date: 2018-11-10T10:54:58-05:00
 description: >
     Huangpu District in Shanghai.
     Saturday, April 28, 2018.
-    上海市黄浦区.
-    2018年4月28日星期六.
+
+    上海市黄浦区。
+    2018年4月28日星期六。
 
 nonpost: true
 
@@ -22,8 +23,8 @@ cover:
 Huangpu District in Shanghai.  
 Saturday, April 28, 2018.  
 
-上海市黄浦区.  
-2018年4月28日星期六.  
+上海市黄浦区。  
+2018年4月28日星期六。  
 
 {{< gallery >}}
     {{< figure link="ab23e487.jpg" thumb="-thumb" size="1920x1285" >}}

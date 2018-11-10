@@ -3,8 +3,8 @@ title: 68a784b8
 date: 2018-11-10T10:20:34-05:00
 
 description: >
-    Spring Garden and Logan Square neighborhoods in Philadelphia  
-    March 4-9, 2018.  
+    Spring Garden and Logan Square neighborhoods in Philadelphia.
+    March 4-9, 2018.
 
 nonpost: true
 

@@ -6,8 +6,8 @@ description: >
     Jingdezhen.
     Tuesday, May 1, 2018.
 
-    景德镇市.
-    2018年5月1日星期二.
+    景德镇市。
+    2018年5月1日星期二。
 
 nonpost: true
 
@@ -23,8 +23,8 @@ cover:
 Jingdezhen.  
 Tuesday, May 1, 2018.  
 
-景德镇市.  
-2018年5月1日星期二.  
+景德镇市。  
+2018年5月1日星期二。  
 
 {{< gallery >}}
     {{< figure link="18fd05e1.jpg" thumb="-thumb" size="1920x1285" >}}
