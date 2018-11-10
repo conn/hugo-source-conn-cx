@@ -12,7 +12,7 @@ nonpost: true
 
 tags:
     - photography
-    - philadelphia
+    - china
 
 cover:
     src: 302336c2-thumb.jpg
