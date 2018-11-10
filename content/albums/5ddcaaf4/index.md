@@ -28,5 +28,5 @@ Saturday, February 17, 2018.
     {{< figure link="9904c3f3.jpg" thumb="-thumb" size="1285x1920" >}}
     {{< figure link="35c79770.jpg" thumb="-thumb" size="1920x1285" >}}
     {{< figure link="140e9cb2.jpg" thumb="-thumb" size="1285x1920" >}}
-    {{< figure link="ef0b6ba9.jpg" thumb="-thumb" size="1920x1285" caption="Genuine boredom" >}}
+    {{< figure link="ef0b6ba9.jpg" thumb="-thumb" size="1920x1285" >}}
 {{< /gallery >}}
